@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2bfcf2f-c2cd-4732-8e1e-463d4720b699" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2VMFNxB0ktbuKMIcPZ7FcfcfyQE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/WebstormProjects/Practice_6/index.html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\WebstormProjects\assignment1\maps" />
+      <recent name="C:\Users\Lenovo\WebstormProjects\assignment1" />
+      <recent name="C:\Users\Lenovo\WebstormProjects\assignment1\agents" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2bfcf2f-c2cd-4732-8e1e-463d4720b699" name="Changes" comment="" />
+      <created>1694638006435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694638006435</updated>
+      <workItem from="1694638007692" duration="2253000" />
+      <workItem from="1694676499134" duration="1095000" />
+      <workItem from="1694689021370" duration="344000" />
+      <workItem from="1694868357127" duration="15754000" />
+      <workItem from="1694895154331" duration="5000000" />
+      <workItem from="1694922692414" duration="9469000" />
+      <workItem from="1695007539221" duration="5928000" />
+      <workItem from="1695014027986" duration="111000" />
+      <workItem from="1695051465398" duration="504000" />
+      <workItem from="1695197039874" duration="2860000" />
+      <workItem from="1695294145608" duration="6351000" />
+      <workItem from="1695631384113" duration="906000" />
+      <workItem from="1695802138688" duration="2560000" />
+      <workItem from="1695837804815" duration="12418000" />
+      <workItem from="1695994764228" duration="954000" />
+      <workItem from="1696005059064" duration="1201000" />
+      <workItem from="1696013453129" duration="6030000" />
+      <workItem from="1696066947082" duration="20321000" />
+      <workItem from="1696137518769" duration="476000" />
+      <workItem from="1696174373715" duration="1286000" />
+      <workItem from="1696182825092" duration="6984000" />
+      <workItem from="1696197616092" duration="12625000" />
+      <workItem from="1696406313455" duration="1584000" />
+      <workItem from="1697011051618" duration="3206000" />
+      <workItem from="1697090426960" duration="804000" />
+      <workItem from="1697282040482" duration="1689000" />
+      <workItem from="1697615919188" duration="258000" />
+      <workItem from="1698039774940" duration="12020000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

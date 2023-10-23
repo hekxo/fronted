@@ -1,0 +1,58 @@
+body {
+    background-image: url("https://shorturl.at/jpsCG");
+}
+
+h1 {
+    font-family: "VALORANT", sans-serif;
+    color: white;
+}
+
+p {
+    text-align: left;
+    color: white;
+    font-family: "Courier New", sans-serif;
+    font-size: large;
+}
+
+img {
+    float: left;
+}
+
+.agent_info {
+    font-family: "Courier New", sans-serif;
+    color: black;
+    font-size: x-large;
+    clear: right;
+}
+
+table, td, th {
+    border: 3px solid rgb(17, 17, 17);
+    text-align: center;
+    background-color: cadetblue;
+    position: relative;
+    right: 10%;
+}
+
+.heading-utils {
+    position: relative;
+    right: 18%;
+}
+
+.abilities {
+    font-family: DINfun Pro Inktrap, sans-serif;
+    color: rgb(15, 25, 35);
+    font-size: x-large;
+    float: left;
+    position: absolute;
+    left: 28em;
+}
+
+button {
+    font-size: x-large;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.btn-utils {
+    font-family: "VALORANT", sans-serif;
+}
