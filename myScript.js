@@ -93,10 +93,10 @@ function updateCountdown() {
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the remaining time with leading zeros
-        document.getElementById("days").innerHTML = formatTime(days);
-        document.getElementById("hours").innerHTML = formatTime(hours);
-        document.getElementById("minutes").innerHTML = formatTime(minutes);
-        document.getElementById("seconds").innerHTML = formatTime(seconds);
+        document.getElementsByClassName("time").innerHTML = formatTime(days);
+        document.getElementsByClassName("time").innerHTML = formatTime(hours);
+        document.getElementsByClassName("time").innerHTML = formatTime(minutes);
+        document.getElementsByClassName("time").innerHTML = formatTime(seconds);
     }
 }
 

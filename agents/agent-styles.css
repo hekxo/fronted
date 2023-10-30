@@ -1,5 +1,6 @@
 body {
     background-image: url("https://shorturl.at/jpsCG");
+    overflow-x: hidden;
 }
 
 h1 {
@@ -16,6 +17,8 @@ p {
 
 img {
     float: left;
+    max-width: 100%;
+    height: auto;
 }
 
 .agent_info {

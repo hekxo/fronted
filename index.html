@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALORANT: Riot Games</title>
     <link rel="icon" type="image/x-icon" href="https://shorturl.at/cnpBV">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="my_jquery_functions.js"></script>
     <link rel="stylesheet" href=styles.css>
 
     <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
@@ -19,7 +22,7 @@
 
     <style>
         .spacing-for-link {
-            margin: 200px;
+            margin: 50px;
         }
     </style>
 
@@ -33,51 +36,47 @@
             <a class="navbar-brand" href="index.html">
                 <img class="nav-vlr-icon" src = "https://shorturl.at/ahtY4" alt = "vlr-icon">
             </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#game-info">Game info</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#game-info">Game info</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#news">News</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#agents">Agents</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agents">Agents</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="maps/maps.html" target="_blank">Maps</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="maps/maps.html" target="_blank">Maps</a>
+                    </li>
 
-                <li class="nav-item dropdown dropend">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Socials
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://t.me/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
-                            <img class = "link-img" src = "https://cdn-icons-png.flaticon.com/512/2615/2615096.png" alt = "link-img">Telegram
-                        </a></li>
-                        <li><a class="dropdown-item" href="https://x.com/Hekxo1?t=N6TuFKjz15_deMxJsSu5Hw&s=09" target="_blank" style="font-weight: bold; font-size: larger">
-                            <img class = "link-img" src = "https://cdn-icons-png.flaticon.com/512/2615/2615096.png" alt = "link-img">Twitter
-                        </a></li>
-                        <li><a class="dropdown-item" href="https://vk.com/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
-                            <img class = "link-img" src = "https://cdn-icons-png.flaticon.com/512/2615/2615096.png" alt = "link-img">VK
-                        </a></li>
-                    </ul>
-                </li>
-            </ul>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Socials
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://t.me/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
+                                <img class = "link-img" src = "https://cdn-icons-png.flaticon.com/512/2615/2615096.png" alt = "link-img">Telegram
+                            </a></li>
+                            <li><a class="dropdown-item" href="https://x.com/Hekxo1?t=N6TuFKjz15_deMxJsSu5Hw&s=09" target="_blank" style="font-weight: bold; font-size: larger">
+                                <img class = "link-img" src = "https://cdn-icons-png.flaticon.com/512/2615/2615096.png" alt = "link-img">Twitter
+                            </a></li>
+                            <li><a class="dropdown-item" href="https://vk.com/hekxo" target="_blank" style="font-weight: bold; font-size: larger">
+                                <img class = "link-img" src = "https://cdn-icons-png.flaticon.com/512/2615/2615096.png" alt = "link-img">VK
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
-        <section class="heading">
-            <h1 class="display-2"><strong>VALORANT</strong></h1>
-            <h2 class="display-6"><img src="https://shorturl.at/lGKN7" alt="Riot Games" class="riot_icon">Riot Games</h2>
-        </section>
-
-        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            PLAY NOW!
-        </button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -101,31 +100,36 @@
             </div>
         </div>
 
-        <div class="row g-2">
-            <div class="col-12 col-md-6 col-lg-12">
-                <img id="game-info" class = "vlr-image" src="https://shorturl.at/lpwK2" alt="vlr-img">
-            </div>
-            <div class="col-12 col-md-6 col-lg-12">
-                <pre class="vlr-info">
-            VALORANT is a popular
-            free-to-play tactical
-            first-person shooter (FPS)
-            video game developed
-            and published
-            by Riot Games.
-            Valorant combines elements
-            of traditional
-            FPS gameplay with
-            unique character
-            abilities inspired
-            by hero-based
-            shooters like Overwatch
-            and hero shooters.
-                </pre>
+        <section class="heading">
+            <h1 class="display-2"><strong>VALORANT</strong></h1>
+            <h2 class="display-6"><img src="https://shorturl.at/lGKN7" alt="Riot Games" class="riot_icon">Riot Games</h2>
+        </section>
+
+        <div class="game-info">
+            <img id="game-info" class = "vlr-image" src="https://shorturl.at/abFI2" alt="vlr-img">
+            <pre class="vlr-info">
+VALORANT is a popular
+free-to-play tactical
+first-person shooter (FPS)
+video game developed
+and published by
+Riot Games.
+Valorant combines
+elements of traditional
+FPS gameplay with unique
+character abilities
+inspired by hero-based
+shooters like Overwatch
+and hero shooters.
+            </pre>
+            <div id="main-button">
+                <button type="button" id="play-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span id="play-text">PLAY NOW!</span>
+                </button>
             </div>
         </div>
 
-        <div class = "spacing"></div>
+        <div class="spacing"></div>
 
         <p class="p-form_valid">Enter your email address:</p>
         <form id="myForm">
@@ -147,6 +151,8 @@
             <li class="goal">Deal damage: 200,000</li>
             <li class="goal">Use abilities: 30</li>
         </ol>
+
+        <button id="closingTasksList">HIDE/SHOW DAILY GOALS</button>
 
         <div class = "spacing"></div>
                 
@@ -222,47 +228,59 @@
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="agents/yoru.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/gmwIM" alt="Yoru"></a>
-                        <pre class = "agent-information">
+                        <a href="agents/yoru.html" target="_blank">
+                            <img class = "img-agent" src="https://shorturl.at/gmwIM" alt="Yoru">
+                        </a>
+                        <div class="agent-info">
+                            <pre class = "agent-biography">
                         <span class="display-5">ROLE: DUELIST</span>
                         <br>
-                        Japanese native, Yoru, rips holes
-                        straight through reality to infiltrate
-                        enemy lines unseen. Using deception and
-                        aggression in equal measure,
-                        he gets the drop on each target before
-                        they know where to look.
+                    Japanese native, Yoru, rips holes
+                    straight through reality to infiltrate
+                    enemy lines unseen. Using deception and
+                    aggression in equal measure,
+                    he gets the drop on each target before
+                    they know where to look.
                         </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/yoru.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
+                            <div class = "spacing-for-link"></div>
+                            <a class = "agent-link" href = "agents/yoru.html" target = "_blank">
+                                <button type="button" class="btn btn-danger">
+                                    LEARN MORE &rarr;
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <a href="agents/jett.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/kpuAV" alt="Jett"></a>
-                        <pre class = "agent-information">
+                        <a href="agents/jett.html" target="_blank">
+                            <img class = "img-agent" src="https://shorturl.at/kpuAV" alt="Jett">
+                        </a>
+                        <div class="agent-info">
+                            <pre class = "agent-biography">
                         <span class="display-5">ROLE: DUELIST</span>
                         <br>
-                        Representing her home country of South Korea,
-                        Jett's agile and evasive fighting style
-                        lets her take risks no one else can.
-                        She runs circles around every skirmish,
-                        cutting enemies before they even know what hit them.
+                Representing her home country of South Korea,
+                Jett's agile and evasive fighting style
+                lets her take risks no one else can.
+                She runs circles around every skirmish,
+                cutting enemies before
+                they even know what hit them.
                         </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/jett.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
+                            <div class = "spacing-for-link"></div>
+                            <a class = "agent-link" href = "agents/jett.html" target = "_blank">
+                                <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
+                            </a>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <a href="agents/raze.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/fHINZ" alt="Raze"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: DUELIST</span>
                         <br>
-                        Raze explodes out of Brazil with her big personality
-                        and big guns. With her blunt-force-trauma playstyle,
-                        she excels at flushing entrenched enemies and
-                        clearing tight spaces with a generous dose of "boom.
+                Raze explodes out of Brazil with her big
+                personality and big guns. With her
+                blunt-force-trauma playstyle, she excels
+                at flushing entrenched enemies and
+                clearing tight spaces with a generous dose of "boom.
                         </pre>
                         <div class = "spacing-for-link"></div>
                         <a class = "agent-link" href = "agents/raze.html" target = "_blank">
@@ -271,14 +289,15 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/phoenix.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/moxyZ" alt="Phoenix"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: DUELIST</span>
                         <br>
-                        Hailing from the U.K., Phoenix's star power shines through
-                        in his fighting style, igniting the
-                        battlefield with flash and flare.
-                        Whether he's got backup or not, he'll rush
-                        into a fight on his own terms.
+                    Hailing from the U.K., Phoenix's
+                    star power shines through in his
+                    fighting style, igniting the
+                    battlefield with flash and flare.
+                    Whether he's got backup or not, he'll rush
+                    into a fight on his own terms.
                         </pre>
                         <div class = "spacing-for-link"></div>
                         <a class = "agent-link" href = "agents/phoenix.html" target = "_blank">
@@ -287,14 +306,15 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/neon.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/wRUX4" alt="Neon"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: DUELIST</span>
                         <br>
-                        Filipino Agent Neon surges forward
-                        at shocking speeds, discharging bursts of
-                        bioelectric radiance as fast as her body generates it.
-                        She races ahead to catch enemies off guard, then strikes
-                        them down quicker than lightning.
+                    Filipino Agent Neon surges forward
+                    at shocking speeds, discharging bursts of
+                    bioelectric radiance as fast as her
+                    body generates it. She races ahead to
+                    catch enemies off guard, then strikes
+                    them down quicker than lightning.
                         </pre>
                         <div class = "spacing-for-link"></div>
                         <a class = "agent-link" href = "agents/neon.html" target = "_blank">
@@ -303,7 +323,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/breach.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/lquGU" alt="Breach"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: INITIATOR</span>
                         <br>
                         Breach, the bionic Swede, fires powerful, targeted kinetic
@@ -318,7 +338,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/skye.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/apqO5" alt="Skye"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: INITIATOR</span>
                         <br>
                         Hailing from Australia, Skye and her band of beasts
@@ -334,7 +354,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/gekko.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/ovMSY" alt="Gekko"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: INITIATOR</span>
                         <br>
                         Gekko the Angeleno leads a tight-knit
@@ -349,7 +369,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/kayo.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/fCEX2" alt="KAY/O"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: INITIATOR</span>
                         <br>
                         KAY/O is a machine of war built for a single purpose:
@@ -364,7 +384,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/fade.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/wEP24" alt="Fade"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: INITIATOR</span>
                         <br>
                         Turkish bounty hunter, Fade, unleashes
@@ -380,7 +400,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/viper.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/btvwO" alt="Viper"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: CONTROLLER</span>
                         <br>
                         The American Chemist, Viper deploys an array
@@ -395,7 +415,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/cypher.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/ajGZ4" alt="Cypher"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: SENTINEL</span>
                         <br>
                         The Moroccan information broker, Cypher is
@@ -410,7 +430,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/killjoy.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/jwS68" alt="Killjoy"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: SENTINEL</span>
                         <br>
                         The genius of Germany. Killjoy secures the
@@ -425,7 +445,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/astra.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/etzEH" alt="Astra"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: CONTROLLER</span>
                         <br>
                         Ghanaian Agent Astra harnesses the energies
@@ -441,7 +461,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/chamber.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/vMQX4" alt="Chamber"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: SENTINEL</span>
                         <br>
                         Well-dressed and well-armed, French weapons
@@ -457,7 +477,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/harbor.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/jxOW8" alt="Harbor"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: CONTROLLER</span>
                         <br>
                         Hailing from India’s coast, Harbor storms the field wielding
@@ -472,7 +492,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/deadlock.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/jtP27" alt="Deadlock"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: SENTINEL</span>
                         <br>
                         Norwegian operative Deadlock deploys an array
@@ -488,7 +508,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="agents/brimstone.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/dBCVY" alt="Brimstone"></a>
-                        <pre class = "agent-information">
+                        <pre class = "agent-biography">
                         <span class="display-5">ROLE: CONTROLLER</span>
                         <br>
                         Joining from the U.S.A., Brimstone's orbital arsenal
@@ -518,10 +538,10 @@
 
         <p class="p-timer">The new season starts in:</p>
         <div class="countdown" id="countdown">
-            <span id="days">00</span>
-            <span id="hours">00</span>
-            <span id="minutes">00</span>
-            <span id="seconds">00</span>
+            <span class="time">00</span>
+            <span class="time">00</span>
+            <span class="time">00</span>
+            <span class="time">00</span>
         </div>
 
 

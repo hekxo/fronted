@@ -2,51 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VALORANT AGENT: PHOENIX</title>
     <link rel = "stylesheet" href = "agent-styles.css">
     <link rel="icon" type="image/x-icon" href="https://shorturl.at/cnpBV">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "agent-styles.css">
+
+    <style>
+        .spacing {
+            margin: 100px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <img style = "margin: 50px" src = "https://shorturl.at/moxyZ" alt = "Phoenix">
+<div class=".container-fluid">
 
-  <section class = "agent_info">
-    <table>
-      <tr>
-        <th>Name:</th>
-        <th>Phoenix</th>
-      </tr>
-      <tr>
-        <th>Role:</th>
-        <th>Duelist</th>
-      </tr>
-      <tr>
-        <th>Biography:</th>
-        <th><pre>
-  Hailing from the U.K., Phoenix's star power shines through
-  in his fighting style, igniting the
-  battlefield with flash and flare.
-  Whether he's got backup or not, he'll rush
-  into a fight on his own terms.
-          </pre></th>
-      </tr>
-    </table>
-  </section>
+    <div class="spacing"></div>
 
-  <h1>Abilities:</h1>
-  <div class = "abilities">
-      <ul>
-          <li><a href = "https://shorturl.at/cyDO6" title = "watch the video"><button>Q - CURVEBALL</button></a></li>
-          <p>EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.</p>
-          <li><a href = "https://shorturl.at/fEJPS" title = "watch the video"><button>E - HOT HANDS</button></a></li>
-          <p>EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.</p>
-          <li><a href = "https://shorturl.at/hirt5" title = "watch the video"><button>C - BLAZE</button></a></li>
-          <p>EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.</p>
-          <li><a href = "https://shorturl.at/eikxD" title = "watch the video"><button>X - RUN IT BACK</button></a></li>
-          <p>INSTANTLY place a marker at Phoenix’s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.</p>
-      </ul>
-  </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <img style = "margin: 50px" src = "https://shorturl.at/moxyZ" alt = "Phoenix">
+        </div>
+        <div class="col-lg-6">
+            <section class = "agent_info">
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <th>Phoenix</th>
+                    </tr>
+                    <tr>
+                        <th>Role:</th>
+                        <th>Duelist</th>
+                    </tr>
+                    <tr>
+                        <th>Biography:</th>
+                        <th><pre>
+        Hailing from the U.K., Phoenix's star power shines through
+        in his fighting style, igniting the
+        battlefield with flash and flare.
+        Whether he's got backup or not, he'll rush
+        into a fight on his own terms.
+                        </pre></th>
+                    </tr>
+                </table>
+            </section>
+
+            <br>
+
+            <h1 class="heading-utils">Abilities:</h1>
+            <div class="abilities">
+                <ul>
+                    <li>
+                        <a href = "https://shorturl.at/cyDO6" title = "watch the video">
+                            <button class="btn-utils">Q - CURVEBALL</button>
+                        </a>
+                    </li>
+                    <p>EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.</p>
+                    <li>
+                        <a href = "https://shorturl.at/fEJPS" title = "watch the video">
+                            <button class="btn-utils">E - HOT HANDS</button>
+                        </a>
+                    </li>
+                    <p>EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.</p>
+                    <li>
+                        <a href = "https://shorturl.at/hirt5" title = "watch the video">
+                            <button class="btn-utils">C - BLAZE</button>
+                        </a>
+                    </li>
+                    <p>EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.</p>
+                    <li>
+                        <a href = "https://shorturl.at/eikxD" title = "watch the video">
+                            <button class="btn-utils">X - RUN IT BACK</button>
+                        </a>
+                    </li>
+                    <p>INSTANTLY place a marker at Phoenix’s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.</p>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="agentPageScript.js"></script>
 
 </body>
 </html>
