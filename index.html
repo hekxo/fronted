@@ -16,13 +16,7 @@
 
     <style>
         .spacing {
-            margin: 200px;
-        }
-    </style>
-
-    <style>
-        .spacing-for-link {
-            margin: 50px;
+            margin: 150px;
         }
     </style>
 
@@ -41,7 +35,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#game-info">Game info</a>
                     </li>
@@ -105,80 +99,103 @@
             <h2 class="display-6"><img src="https://shorturl.at/lGKN7" alt="Riot Games" class="riot_icon">Riot Games</h2>
         </section>
 
-        <div class="game-info">
-            <img id="game-info" class = "vlr-image" src="https://shorturl.at/abFI2" alt="vlr-img">
-            <pre class="vlr-info">
-VALORANT is a popular
-free-to-play tactical
-first-person shooter (FPS)
-video game developed
-and published by
-Riot Games.
-Valorant combines
-elements of traditional
-FPS gameplay with unique
-character abilities
-inspired by hero-based
-shooters like Overwatch
-and hero shooters.
-            </pre>
-            <div id="main-button">
-                <button type="button" id="play-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <span id="play-text">PLAY NOW!</span>
-                </button>
+        <div id="email-submission">
+            <button id="btn-email">Enter your email address:</button>
+            <form id="myForm">
+                <label for="email"></label><input type="email" id="email" name="email" required>
+                <button id="submit-email" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="spacing"></div>
+
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+
+                <div class="col-12 col-md-12 col-lg-8" style="padding: 5%">
+                    <img id="game-info" class = "vlr-image" src="https://shorturl.at/abFI2" alt="vlr-img">
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4" style="padding: 5%">
+                    <p class="vlr-info">
+                        VALORANT is a popular
+                        free-to-play tactical
+                        first-person shooter (FPS)
+                        video game developed
+                        and published by
+                        Riot Games.
+                        Valorant combines
+                        elements of traditional
+                        FPS gameplay with unique
+                        character abilities
+                        inspired by hero-based
+                        shooters like Overwatch
+                        and hero shooters.
+                    </p>
+                </div>
+
+                <div class="col-12">
+                    <div id="main-button">
+                        <button type="button" id="play-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span id="play-text">PLAY NOW!</span>
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div class="spacing"></div>
 
-        <p class="p-form_valid">Enter your email address:</p>
-        <form id="myForm">
-            <label for="email"></label><input type="email" id="email" name="email" required>
-            <button id="submit-email" type="submit">Submit</button>
-        </form>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-12" style="padding-right: 5%; padding-left: 5%">
+                    <div id="myDIV" class="header">
+                        <h2 class="header-title">Your daily goals:</h2>
+                        <label for="myInput"></label><input type="text" id="myInput" placeholder="Title...">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                    </div>
 
-        <br>
+                    <ol id="myOL">
+                        <li class="goal">Win games: 5</li>
+                        <li class="goal">Make kills: 75</li>
+                        <li class="goal">Deal damage: 200,000</li>
+                        <li class="goal">Use abilities: 30</li>
+                    </ol>
+                </div>
 
-        <div id="myDIV" class="header">
-            <h2 class="header-title">Your daily goals:</h2>
-            <label for="myInput"></label><input type="text" id="myInput" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add</span>
+                <div class="col-12">
+                    <button id="closingTasksList">HIDE/SHOW DAILY GOALS</button>
+                </div>
+            </div>
         </div>
-
-        <ol id="myOL">
-            <li class="goal">Win games: 5</li>
-            <li class="goal">Make kills: 75</li>
-            <li class="goal">Deal damage: 200,000</li>
-            <li class="goal">Use abilities: 30</li>
-        </ol>
-
-        <button id="closingTasksList">HIDE/SHOW DAILY GOALS</button>
 
         <div class = "spacing"></div>
                 
         <main>
 
             <h3 id = "news" class="heading-3">LATEST NEWS:</h3>
-            <div class = "row g-3">
-                <div class = "col-12 col-md-6 col-lg-4">
-                    <div class="card text-white bg-secondary mb-3" style="width: 30rem;">
-                        <img class = "card-img-top" src = "https://shorturl.at/dBMR5" alt = "main-vlr-image">
+            <hr>
+            <div class = "row g-3 justify-content-md-center">
+                <div class = "col-12 col-md-12 col-lg-4">
+                    <div class="card text-white bg-secondary mb-3" style="width: 23rem;">
+                        <img class="card-img-top" src="https://shorturl.at/dBMR5" alt="main-vlr-image">
                         <div class="card-body">
                             <h5 class="card-title">OFFICIAL NEW MAP: SUNSET</h5>
                             <p class="card-text">
-                                Peel back the KINGDOM curtain for a look at Sunset: a vibrant new map set right in Gekko’s stomping grounds.
+                                Peel back the KINGDOM curtain for a look at Sunset: a vibrant new map set right in Gekko’s stomping grounds. Play it soon!
                             </p>
                             <a href = "https://youtu.be/kmfok5MtWkI" target="_blank">
                                 <button type="button" class="btn btn-danger">
-                                    WATCH<img class = "play-icon" src = "https://shorturl.at/bty56" alt = "play-icon">
+                                    WATCH<img class="play-icon" src="https://shorturl.at/bty56" alt="play-icon">
                                 </button>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class = "col-12 col-md-6 col-lg-4">
-                    <div class="card text-white bg-secondary mb-3" style="width: 30rem;">
-                        <img class = "card-img-top" src = "https://t.ly/4ZIq-" alt = "new bundle">
+                <div class = "col-12 col-md-12 col-lg-4">
+                    <div class="card text-white bg-secondary mb-3" style="width: 23rem;">
+                        <img class="card-img-top" src="https://t.ly/4ZIq-" alt="new bundle">
                         <div class="card-body">
                             <h5 class="card-title">NEW IMPERIUM SKIN BUNDLE</h5>
                             <p class="card-text">
@@ -186,15 +203,15 @@ and hero shooters.
                             </p>
                             <a href = "https://youtu.be/KTIIlCjGL9k" target="_blank">
                                 <button type="button" class="btn btn-danger">
-                                    WATCH<img class = "play-icon" src = "https://shorturl.at/bty56" alt = "play-icon">
+                                    WATCH<img class="play-icon" src="https://shorturl.at/bty56" alt="play-icon">
                                 </button>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class = "col-12 col-md-6 col-lg-4">
-                    <div class="card text-white bg-secondary mb-3" style="width: 30rem;">
-                        <img class = "card-img-top" src = "https://shorturl.at/jlMVX" alt = "deadlock">
+                <div class = "col-12 col-md-12 col-lg-4">
+                    <div class="card text-white bg-secondary mb-3" style="width: 23rem;">
+                        <img class="card-img-top" src="https://shorturl.at/jlMVX" alt="deadlock">
                         <div class="card-body">
                             <h5 class="card-title">LATEST NEW AGENT: DEADLOCK</h5>
                             <p class="card-text">
@@ -202,7 +219,7 @@ and hero shooters.
                             </p>
                             <a href = "https://youtu.be/sUoSPryMZr0" target="_blank">
                                 <button type="button" class="btn btn-danger">
-                                    WATCH<img class = "play-icon" src = "https://shorturl.at/bty56" alt = "play-icon">
+                                    WATCH<img class="play-icon" src="https://shorturl.at/bty56" alt="play-icon">
                                 </button>
                             </a>
                         </div>
@@ -210,340 +227,538 @@ and hero shooters.
                 </div>
             </div>
 
-            <div class = "spacing"></div>
+            <div class="spacing"></div>
 
-            <h3 id = "agents" class = "heading-3">AGENTS:</h3>
+            <h3 id="agents" class="heading-3">AGENTS:</h3>
+
             <div class="dropdown-center" data-bs-theme="dark">
                 <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     SORT AGENTS:
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="">Duelists</a></li>
-                    <li><a class="dropdown-item" href="">Initiators</a></li>
-                    <li><a class="dropdown-item" href="">Controllers</a></li>
-                    <li><a class="dropdown-item" href="">Sentinels</a></li>
+                    <li><a class="dropdown-item">Duelists</a></li>
+                    <li><a class="dropdown-item">Initiators</a></li>
+                    <li><a class="dropdown-item">Controllers</a></li>
+                    <li><a class="dropdown-item">Sentinels</a></li>
                 </ul>
             </div>
 
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="agents/yoru.html" target="_blank">
-                            <img class = "img-agent" src="https://shorturl.at/gmwIM" alt="Yoru">
-                        </a>
-                        <div class="agent-info">
-                            <pre class = "agent-biography">
-                        <span class="display-5">ROLE: DUELIST</span>
-                        <br>
-                    Japanese native, Yoru, rips holes
-                    straight through reality to infiltrate
-                    enemy lines unseen. Using deception and
-                    aggression in equal measure,
-                    he gets the drop on each target before
-                    they know where to look.
-                        </pre>
-                            <div class = "spacing-for-link"></div>
-                            <a class = "agent-link" href = "agents/yoru.html" target = "_blank">
-                                <button type="button" class="btn btn-danger">
-                                    LEARN MORE &rarr;
-                                </button>
-                            </a>
+            <div class="container-fluid">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/yoru.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/gmwIM" alt="Yoru">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: DUELIST</h5>
+                                        <p class = "agent-biography">
+                                            Japanese native, Yoru, rips holes
+                                            straight through reality to infiltrate
+                                            enemy lines unseen. Using deception and
+                                            aggression in equal measure,
+                                            he gets the drop on each target before
+                                            they know where to look.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/yoru.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">
+                                                LEARN MORE &rarr;
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/jett.html" target="_blank">
-                            <img class = "img-agent" src="https://shorturl.at/kpuAV" alt="Jett">
-                        </a>
-                        <div class="agent-info">
-                            <pre class = "agent-biography">
-                        <span class="display-5">ROLE: DUELIST</span>
-                        <br>
-                Representing her home country of South Korea,
-                Jett's agile and evasive fighting style
-                lets her take risks no one else can.
-                She runs circles around every skirmish,
-                cutting enemies before
-                they even know what hit them.
-                        </pre>
-                            <div class = "spacing-for-link"></div>
-                            <a class = "agent-link" href = "agents/jett.html" target = "_blank">
-                                <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/raze.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/fHINZ" alt="Raze"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: DUELIST</span>
-                        <br>
-                Raze explodes out of Brazil with her big
-                personality and big guns. With her
-                blunt-force-trauma playstyle, she excels
-                at flushing entrenched enemies and
-                clearing tight spaces with a generous dose of "boom.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/raze.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/phoenix.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/moxyZ" alt="Phoenix"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: DUELIST</span>
-                        <br>
-                    Hailing from the U.K., Phoenix's
-                    star power shines through in his
-                    fighting style, igniting the
-                    battlefield with flash and flare.
-                    Whether he's got backup or not, he'll rush
-                    into a fight on his own terms.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/phoenix.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/neon.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/wRUX4" alt="Neon"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: DUELIST</span>
-                        <br>
-                    Filipino Agent Neon surges forward
-                    at shocking speeds, discharging bursts of
-                    bioelectric radiance as fast as her
-                    body generates it. She races ahead to
-                    catch enemies off guard, then strikes
-                    them down quicker than lightning.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/neon.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/breach.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/lquGU" alt="Breach"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: INITIATOR</span>
-                        <br>
-                        Breach, the bionic Swede, fires powerful, targeted kinetic
-                        blasts to aggressively clear a path through enemy ground.
-                        The damage and disruption he inflicts
-                        ensures no fight is ever fair.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/breach.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/skye.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/apqO5" alt="Skye"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: INITIATOR</span>
-                        <br>
-                        Hailing from Australia, Skye and her band of beasts
-                        trail-blaze the way through hostile territory.
-                        With her creations hampering the enemy,
-                        and her power to heal others,
-                        the team is strongest and safest by Skye’s side.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/skye.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/gekko.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/ovMSY" alt="Gekko"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: INITIATOR</span>
-                        <br>
-                        Gekko the Angeleno leads a tight-knit
-                        crew of calamitous creatures. His buddies bound forward,
-                        scattering enemies out of the way,
-                        with Gekko chasing them down to regroup and go again.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/gekko.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/kayo.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/fCEX2" alt="KAY/O"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: INITIATOR</span>
-                        <br>
-                        KAY/O is a machine of war built for a single purpose:
-                        neutralizing radiants. His power to Suppress enemy abilities
-                        dismantles his opponents' capacity to fight back,
-                        securing him and his allies the ultimate edge.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/kayo.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/fade.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/wEP24" alt="Fade"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: INITIATOR</span>
-                        <br>
-                        Turkish bounty hunter, Fade, unleashes
-                        the power of raw nightmares to seize
-                        enemy secrets. Attuned with terror itself,
-                        she hunts targets and reveals their deepest
-                        fears—before crushing them in the dark.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/fade.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/viper.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/btvwO" alt="Viper"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: CONTROLLER</span>
-                        <br>
-                        The American Chemist, Viper deploys an array
-                        of poisonous chemical devices to control
-                        the battlefield and choke the enemy's vision.
-                        If the toxins don't kill her prey, her mindgames surely will.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/viper.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/cypher.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/ajGZ4" alt="Cypher"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: SENTINEL</span>
-                        <br>
-                        The Moroccan information broker, Cypher is
-                        a one-man surveillance network who keeps
-                        tabs on the enemy's every move.
-                        No secret is safe. No maneuver goes unseen.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/cypher.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/killjoy.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/jwS68" alt="Killjoy"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: SENTINEL</span>
-                        <br>
-                        The genius of Germany. Killjoy secures the
-                        battlefield with ease using her arsenal of inventions.
-                        If the damage from her gear doesn't stop her enemies,
-                        her robots' debuff will help make short work of them.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/killjoy.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/astra.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/etzEH" alt="Astra"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: CONTROLLER</span>
-                        <br>
-                        Ghanaian Agent Astra harnesses the energies
-                        of the cosmos to reshape battlefields to her whim.
-                        With full command of her astral form and a talent for deep
-                        strategic foresight, she's always eons ahead
-                        of her enemy's next move.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/astra.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/chamber.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/vMQX4" alt="Chamber"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: SENTINEL</span>
-                        <br>
-                        Well-dressed and well-armed, French weapons
-                        designer Chamber expels aggressors with deadly precision.
-                        He leverages his custom arsenal to hold the
-                        line and pick off enemies from afar,
-                        with a contingency built for every plan.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/chamber.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/harbor.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/jxOW8" alt="Harbor"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: CONTROLLER</span>
-                        <br>
-                        Hailing from India’s coast, Harbor storms the field wielding
-                        ancient technology with dominion over water.
-                        He unleashes frothing rapids and crushing waves to
-                        shield his allies, or pummel those that oppose him.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/harbor.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/deadlock.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/jtP27" alt="Deadlock"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: SENTINEL</span>
-                        <br>
-                        Norwegian operative Deadlock deploys an array
-                        of cutting-edge nanowire to secure the battlefield
-                        from even the most lethal assault.
-                        No one escapes her vigilant watch,
-                        nor survives her unyielding ferocity.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/deadlock.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="agents/brimstone.html" target="_blank"><img class = "img-agent" src="https://shorturl.at/dBCVY" alt="Brimstone"></a>
-                        <pre class = "agent-biography">
-                        <span class="display-5">ROLE: CONTROLLER</span>
-                        <br>
-                        Joining from the U.S.A., Brimstone's orbital arsenal
-                        ensures his squad always has the advantage.
-                        His ability to deliver utility precisely and
-                        safely make him the unmatched boots-on-the-ground commander.
-                        </pre>
-                        <div class = "spacing-for-link"></div>
-                        <a class = "agent-link" href = "agents/brimstone.html" target = "_blank">
-                            <button type="button" class="btn btn-danger" style="position: relative; top: 0">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/jett.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/kpuAV" alt="Jett">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="display-5">ROLE: DUELIST</h5>
+                                    <p class="agent-biography">
+                                        Representing her home country of South Korea,
+                                        Jett's agile and evasive fighting style
+                                        lets her take risks no one else can.
+                                        She runs circles around every skirmish,
+                                        cutting enemies before
+                                        they even know what hit them.
+                                    </p>
+                                    <a class = "agent-link" href = "agents/jett.html" target = "_blank">
+                                        <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/raze.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/fHINZ" alt="Raze">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="display-5">ROLE: DUELIST</h5>
+                                    <p class="agent-biography">
+                                        Raze explodes out of Brazil with her big
+                                        personality and big guns. With her
+                                        blunt-force-trauma playstyle, she excels
+                                        at flushing entrenched enemies and
+                                        clearing tight spaces with a generous dose of "boom.
+                                    </p>
+                                    <a class = "agent-link" href = "agents/raze.html" target = "_blank">
+                                        <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/phoenix.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/moxyZ" alt="Phoenix">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: DUELIST</h5>
+                                        <p class="agent-biography">
+                                            Hailing from the U.K., Phoenix's
+                                            star power shines through in his
+                                            fighting style, igniting the
+                                            battlefield with flash and flare.
+                                            Whether he's got backup or not, he'll rush
+                                            into a fight on his own terms.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/phoenix.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/neon.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/wRUX4" alt="Neon">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: DUELIST</h5>
+                                        <p class="agent-biography">
+                                            Filipino Agent Neon surges forward
+                                            at shocking speeds, discharging bursts of
+                                            bioelectric radiance as fast as her
+                                            body generates it. She races ahead to
+                                            catch enemies off guard, then strikes
+                                            them down quicker than lightning.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/neon.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/breach.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/lquGU" alt="Breach">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: INITIATOR</h5>
+                                        <p class="agent-biography">
+                                            Breach, the bionic Swede, fires powerful, targeted kinetic
+                                            blasts to aggressively clear a path through enemy ground.
+                                            The damage and disruption he inflicts
+                                            ensures no fight is ever fair.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/breach.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/skye.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/apqO5" alt="Skye">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: INITIATOR</h5>
+                                        <p class="agent-biography">
+                                            Hailing from Australia, Skye and her band of beasts
+                                            trail-blaze the way through hostile territory.
+                                            With her creations hampering the enemy,
+                                            and her power to heal others,
+                                            the team is strongest and safest by Skye’s side.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/skye.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/gekko.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/ovMSY" alt="Gekko">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: INITIATOR</h5>
+                                        <p class="agent-biography">
+                                            Gekko the Angeleno leads a tight-knit
+                                            crew of calamitous creatures. His buddies bound forward,
+                                            scattering enemies out of the way,
+                                            with Gekko chasing them down to regroup and go again.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/gekko.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/kayo.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/fCEX2" alt="KAY/O">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: INITIATOR</h5>
+                                        <p class="agent-biography">
+                                            KAY/O is a machine of war built for a single purpose:
+                                            neutralizing radiants. His power to Suppress enemy abilities
+                                            dismantles his opponents' capacity to fight back,
+                                            securing him and his allies the ultimate edge.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/kayo.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/fade.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/wEP24" alt="Fade">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: INITIATOR</h5>
+                                        <p class="agent-biography">
+                                            Turkish bounty hunter, Fade, unleashes
+                                            the power of raw nightmares to seize
+                                            enemy secrets. Attuned with terror itself,
+                                            she hunts targets and reveals their deepest
+                                            fears—before crushing them in the dark.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/fade.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/viper.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/btvwO" alt="Viper">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: CONTROLLER</h5>
+                                        <p class="agent-biography">
+                                            The American Chemist, Viper deploys an array
+                                            of poisonous chemical devices to control
+                                            the battlefield and choke the enemy's vision.
+                                            If the toxins don't kill her prey, her mindgames surely will.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/viper.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="agents/cypher.html" target="_blank">
+                                        <div class="img-agent-class">
+                                            <img class = "img-agent" src="https://shorturl.at/ajGZ4" alt="Cypher">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: SENTINEL</h5>
+                                        <p class="agent-biography">
+                                            The Moroccan information broker, Cypher is
+                                            a one-man surveillance network who keeps
+                                            tabs on the enemy's every move.
+                                            No secret is safe. No maneuver goes unseen.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/cypher.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="img-agent-class">
+                                        <a href="agents/killjoy.html" target="_blank">
+                                            <img class = "img-agent" src="https://shorturl.at/jwS68" alt="Killjoy">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: SENTINEL</h5>
+                                        <p class="agent-biography">
+                                            The genius of Germany. Killjoy secures the
+                                            battlefield with ease using her arsenal of inventions.
+                                            If the damage from her gear doesn't stop her enemies,
+                                            her robots' debuff will help make short work of them.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/killjoy.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="img-agent-class">
+                                        <a href="agents/astra.html" target="_blank">
+                                            <img class = "img-agent" src="https://shorturl.at/etzEH" alt="Astra">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: CONTROLLER</h5>
+                                        <p class="agent-biography">
+                                            Ghanaian Agent Astra harnesses the energies
+                                            of the cosmos to reshape battlefields to her whim.
+                                            With full command of her astral form and a talent for deep
+                                            strategic foresight, she's always eons ahead
+                                            of her enemy's next move.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/astra.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="img-agent-class">
+                                        <a href="agents/chamber.html" target="_blank">
+                                            <img class = "img-agent" src="https://shorturl.at/vMQX4" alt="Chamber">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: SENTINEL</h5>
+                                        <p class="agent-biography">
+                                            Well-dressed and well-armed, French weapons
+                                            designer Chamber expels aggressors with deadly precision.
+                                            He leverages his custom arsenal to hold the
+                                            line and pick off enemies from afar,
+                                            with a contingency built for every plan.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/chamber.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="img-agent-class">
+                                        <a href="agents/harbor.html" target="_blank">
+                                            <img class = "img-agent" src="https://shorturl.at/jxOW8" alt="Harbor">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: CONTROLLER</h5>
+                                        <p class="agent-biography">
+                                            Hailing from India’s coast, Harbor storms the field wielding
+                                            ancient technology with dominion over water.
+                                            He unleashes frothing rapids and crushing waves to
+                                            shield his allies, or pummel those that oppose him.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/harbor.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="img-agent-class">
+                                        <a href="agents/deadlock.html" target="_blank">
+                                            <img class = "img-agent" src="https://shorturl.at/jtP27" alt="Deadlock">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: SENTINEL</h5>
+                                        <p class="agent-biography">
+                                            Norwegian operative Deadlock deploys an array
+                                            of cutting-edge nanowire to secure the battlefield
+                                            from even the most lethal assault.
+                                            No one escapes her vigilant watch,
+                                            nor survives her unyielding ferocity.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/deadlock.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="img-agent-class">
+                                        <a href="agents/brimstone.html" target="_blank">
+                                            <img class = "img-agent" src="https://shorturl.at/dBCVY" alt="Brimstone">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="display-5">ROLE: CONTROLLER</h5>
+                                        <p class="agent-biography">
+                                            Joining from the U.S.A., Brimstone's orbital arsenal
+                                            ensures his squad always has the advantage.
+                                            His ability to deliver utility precisely and
+                                            safely make him the unmatched boots-on-the-ground commander.
+                                        </p>
+                                        <a class = "agent-link" href = "agents/brimstone.html" target = "_blank">
+                                            <button type="button" class="btn btn-danger custom">LEARN MORE &rarr;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </main>
 
         <div class = "spacing"></div>
 
-        <p class="p-timer">The new season starts in:</p>
-        <div class="countdown" id="countdown">
-            <span class="time">00</span>
-            <span class="time">00</span>
-            <span class="time">00</span>
-            <span class="time">00</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3">
+                    <p class="p-timer">The new season starts in:</p>
+                </div>
+                <div class="col-12 col-md-9 col-lg-9">
+                    <div class="countdown" id="countdown">
+                        <span class="time">00</span>
+                        <span class="time">00</span>
+                        <span class="time">00</span>
+                        <span class="time">00</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
 
         <footer class="footer_panel">
             <img class="age-limit" src="https://shorturl.at/nAJNY" alt="age-limit">
@@ -562,6 +777,7 @@ and hero shooters.
     </div>
 
     <script src="myScript.js"></script>
+
 </body>
 
 </html>

@@ -121,8 +121,3 @@ document.getElementById("feedbackForm").addEventListener("submit", function (eve
     feedbackForm.style.display = "none";
 });
 
-
-
-
-
-

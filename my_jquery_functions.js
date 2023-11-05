@@ -15,4 +15,13 @@ $(document).ready(function () {
     })
 });
 
+$(document).ready(function () {
+    $("#myForm").hide();
+    $("#btn-email").click(function () {
+        $("#myForm").show();
+    })
+});
+
+
+
 

@@ -5,31 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2bfcf2f-c2cd-4732-8e1e-463d4720b699" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_jquery_functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/agent-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/agents/agent-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/astra.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/astra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/breach.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/breach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/brimstone.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/brimstone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/chamber.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/chamber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/cypher.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/cypher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/deadlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/deadlock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/fade.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/fade.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/gekko.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/gekko.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/harbor.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/harbor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/jett.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/jett.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/kayo.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/kayo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/killjoy.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/killjoy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/neon.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/neon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/phoenix.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/phoenix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/raze.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/raze.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/skye.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/skye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/viper.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/viper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/yoru.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents/yoru.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/maps/maps.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/myScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_jquery_functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/my_jquery_functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +102,14 @@
       <workItem from="1698435229784" duration="3210000" />
       <workItem from="1698482253518" duration="15182000" />
       <workItem from="1698596976644" duration="639000" />
+      <workItem from="1698688677096" duration="742000" />
+      <workItem from="1698918835403" duration="2257000" />
+      <workItem from="1698921506690" duration="345000" />
+      <workItem from="1698923716889" duration="317000" />
+      <workItem from="1698933454871" duration="1032000" />
+      <workItem from="1699022208691" duration="14626000" />
+      <workItem from="1699095884141" duration="1317000" />
+      <workItem from="1699187052426" duration="7464000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -131,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698054124967</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1698688759749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698688759749</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
