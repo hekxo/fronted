@@ -13,7 +13,7 @@ body {
     padding: 0;
 }
 
-.navbar-toggler {
+.   navbar-toggler {
     color: #BD3944;
 }
 
@@ -251,6 +251,11 @@ h2 {
     max-width: 74%;
     height: auto;
     float: left;
+}
+
+.display-6 {
+    font-family: "VALORANT", sans-serif;
+    color: white;
 }
 
 .vlr-info {

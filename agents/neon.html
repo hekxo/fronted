@@ -4,49 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALORANT AGENT: NEON</title>
-    <link rel = "stylesheet" href = "agent-styles.css">
     <link rel="icon" type="image/x-icon" href="https://shorturl.at/cnpBV">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "agent-styles.css">
+
+    <style>
+        .spacing {
+            margin: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <img style = "margin: 28.84px" src = "https://shorturl.at/wRUX4" alt = "Neon">
+    <div class=".container-fluid">
 
-    <section class = "agent_info">
-        <table>
-            <tr>
-                <th>Name:</th>
-                <th>Neon</th>
-            </tr>
-            <tr>
-                <th>Role:</th>
-                <th>Duelist</th>
-            </tr>
-            <tr>
-                <th>Biography:</th>
-                <th><pre>
-    Filipino Agent Neon surges forward at shocking speeds,
-    discharging bursts of bioelectric radiance as fast as her
-    body generates it. She races ahead to catch enemies off guard,
-    then strikes them down quicker than lightning.
-              </pre></th>
-            </tr>
-        </table>
-    </section>
+        <div class="spacing"></div>
+        
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <img class="agent-page-img" src = "https://shorturl.at/wRUX4" alt = "Neon">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <h1 class="heading-utils">Abilities:</h1>
+                <br>
+                <div class = "abilities">
+                    <ul>
+                        <li>
+                            <a href = "https://shorturl.at/nDJO7" title = "watch the video">
+                                <button>Q - RELAY BOLT</button>
+                            </a>
+                            <p>INSTANTLY throw an energy bolt that bounces once. Upon hitting each surface, the bolt electrifies the ground below with a concussive blast.</p>
+                        </li>
+                        <li>
+                            <a href = "https://shorturl.at/lAIKQ" title = "watch the video">
+                                <button>E - HIGH GEAR</button>
+                            </a>
+                            <p>INSTANTLY channel Neon’s power for increased speed. When charged, ALT FIRE to trigger an electric slide. Slide charge resets every two kills.</p>
+                        </li>
+                        <li>
+                            <a href = "https://shorturl.at/DISY5" title = "watch the video">
+                                <button>C - FAST LANE</button>
+                            </a>
+                            <p>FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision and damage enemies passing through them.</p>
+                        </li>
+                        <li>
+                            <a href = "https://shorturl.at/sAW38" title = "watch the video">
+                                <button>X - OVERDRIVE</button>
+                            </a>
+                            <p>Unleash Neon’s full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy. The duration resets on each kill.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <h1>Abilities:</h1>
-    <div class = "abilities">
-        <ul>
-            <li><a href = "https://shorturl.at/nDJO7" title = "watch the video"><button>Q - RELAY BOLT</button></a></li>
-            <p>INSTANTLY throw an energy bolt that bounces once. Upon hitting each surface, the bolt electrifies the ground below with a concussive blast.</p>
-            <li><a href = "https://shorturl.at/lAIKQ" title = "watch the video"><button>E - HIGH GEAR</button></a></li>
-            <p>INSTANTLY channel Neon’s power for increased speed. When charged, ALT FIRE to trigger an electric slide. Slide charge resets every two kills.</p>
-            <li><a href = "https://shorturl.at/DISY5" title = "watch the video"><button>C - FAST LANE</button></a></li>
-            <p>FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision and damage enemies passing through them.</p>
-            <li><a href = "https://shorturl.at/sAW38" title = "watch the video"><button>X - OVERDRIVE</button></a></li>
-            <p>Unleash Neon’s full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy. The duration resets on each kill.</p>
-        </ul>
+        <div class="spacing"></div>
+
+        <div class = "agent_info">
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td>Neon</td>
+                </tr>
+                <tr>
+                    <th>Role:</th>
+                    <td>Duelist</td>
+                </tr>
+                <tr>
+                    <th>Biography:</th>
+                    <td>
+                        <p class="p-biography">
+                            Filipino Agent Neon surges forward at shocking speeds,
+                            discharging bursts of bioelectric radiance as fast as her
+                            body generates it. She races ahead to catch enemies off guard,
+                            then strikes them down quicker than lightning.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
+    <div class="spacing"></div>
+    <script src="agentPageScript.js"></script>
 </body>
 </html>
