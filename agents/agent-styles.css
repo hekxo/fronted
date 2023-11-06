@@ -23,8 +23,8 @@ p {
 }
 
 .agent-page-img {
-    height: 650px;
-    width: 530px;
+    height: 600px;
+    width: 480px;
 }
 
 .agent-info {
@@ -40,7 +40,7 @@ table, td, th {
     background-color: #53212B;
     font-size: x-large;
     color: white;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 th {
@@ -53,6 +53,17 @@ th {
     font-size: x-large;
     padding-right: 6%;
 }
+
+.ability-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.ability-description.open {
+    max-height: 200px; /* Set an appropriate value for your content */
+}
+
 
 button {
     font-size: x-large;

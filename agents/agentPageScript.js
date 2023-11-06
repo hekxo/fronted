@@ -21,3 +21,22 @@ btn3.addEventListener("click", function() {
 btn4.addEventListener("click", function() {
     alert("Show a tutorial video?");
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const abilityButtons = document.querySelectorAll(".btn-utils");
+    const abilityDescriptions = document.querySelectorAll(".ability-description");
+
+    abilityButtons.forEach(function(button, index) {
+        button.addEventListener("mouseover", function() {
+            const description = abilityDescriptions[index];
+            if (description.classList.contains("open")) {
+                description.classList.remove("open");
+            } else {
+                // Close all other descriptions before opening the clicked one
+                abilityDescriptions.forEach((desc) => desc.classList.remove("open"));
+                description.classList.add("open");
+            }
+        });
+    });
+});
+

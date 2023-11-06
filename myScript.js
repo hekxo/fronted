@@ -5,6 +5,8 @@ document.getElementById("play-button").addEventListener("click", function() {
 });
 
 
+
+
 // Create a "close" button and append it to each list item
 let myNodelist = document.getElementsByClassName("goal");
 let i;
