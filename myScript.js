@@ -1,4 +1,10 @@
 
+document.getElementById("play-button").addEventListener("click", function() {
+    let audio = document.getElementById("myAudio");
+    audio.play();
+});
+
+
 // Create a "close" button and append it to each list item
 let myNodelist = document.getElementsByClassName("goal");
 let i;
@@ -67,17 +73,16 @@ function newElement() {
         // Check if the email value matches the regular expression
             if (!emailRegex.test(emailValue)) {
                 // If it doesn't match, show an alert and prevent form submission
-                alert("Please enter a valid email address.");
+                alert("Please try again.");
                 event.preventDefault(); // Prevent the form from submitting
             }
             else {
-                alert("Successfully logged in your email!");
+                alert("Successfully logged in!");
             }
     });
 
 // Set the date and time for the new season
 const newSeasonDate = new Date('2023-12-01T00:00:00').getTime();
-
 function updateCountdown() {
     const now = new Date().getTime(); // Get the current date and time
     const distance = newSeasonDate - now; // Calculate the time difference between now and the new season start
@@ -120,4 +125,5 @@ document.getElementById("feedbackForm").addEventListener("submit", function (eve
     // Hide the "feedbackForm" by changing its CSS display property to "none"
     feedbackForm.style.display = "none";
 });
+
 

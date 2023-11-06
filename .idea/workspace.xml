@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2bfcf2f-c2cd-4732-8e1e-463d4720b699" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/maps-img/bing-scheme.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maps-img/haven-scheme.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maps-img/split_scheme.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maps/maps-js-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlr-sound.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agents/agent-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/agents/agent-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/maps.css" beforeDir="false" afterPath="$PROJECT_DIR$/maps/maps.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/maps/maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/myScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_jquery_functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/my_jquery_functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +64,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lenovo\WebstormProjects\assignment1\maps" />
       <recent name="C:\Users\Lenovo\WebstormProjects\assignment1" />
+      <recent name="C:\Users\Lenovo\WebstormProjects\assignment1\maps\maps-img" />
+      <recent name="C:\Users\Lenovo\WebstormProjects\assignment1\maps" />
       <recent name="C:\Users\Lenovo\WebstormProjects\assignment1\agents" />
     </key>
   </component>
@@ -104,7 +117,7 @@
       <workItem from="1698933454871" duration="1032000" />
       <workItem from="1699022208691" duration="14626000" />
       <workItem from="1699095884141" duration="1317000" />
-      <workItem from="1699187052426" duration="18951000" />
+      <workItem from="1699187052426" duration="43417000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -154,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699213997328</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1699219745878</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699219745878</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,102 @@
 body {
     background-image: url("https://shorturl.at/jpsCG");
-    overflow-x: hidden
+    overflow-x: hidden;
+}
+
+.display-6 {
+    font-family: "VALORANT", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#maps-list {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.list-group-item {
+    background-color: #BD3944;
+    color: white;
+}
+
+.game {
+    max-width: 960px;
+    margin: auto;
+    font-family: "Courier New", sans-serif;
+    color: white;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.draggable-list {
+    padding: 5px;
+}
+
+.li-game {
+    font-family: "Courier New", sans-serif;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: #555555;
+    border: 1px solid #b0bec5;
+    color: white;
+    cursor: grab;
+}
+
+.over {
+    background-color: #53212B;
+}
+
+
+table {
+    max-width: 640px;
+    margin: auto auto 20px;
+}
+
+th, td {
+    padding: 10px 10px;
+}
+
+td {
+    border: 1px solid #90a4ae;
+}
+
+tr {
+    background-color: #BD3944;
+    color: white;
+    font-family: "Courier New", sans-serif;
+}
+
+button {
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    font-family: VALORANT, sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #53212B;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #53212B;
+}
+
+#endMessage {
+    display: none;
+}
+
+.map-link {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
 }
 
 .map-list {
@@ -40,6 +136,20 @@ body {
     font-family: "VALORANT", sans-serif;
     color: white;
 }
+
+#myModal {
+    max-width: 45%;
+    height: auto;
+    position: fixed;
+    left: 30%;
+}
+
+#modal-image {
+    max-width: 100%; /* Adjust this value to make the image smaller or larger */
+    height: auto;
+}
+
+
 
 
 

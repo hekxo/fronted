@@ -54,11 +54,34 @@ body {
     font-family: "VALORANT", sans-serif;
     font-size: larger;
 }
+
 #myForm {
     width: 25%;
 }
 
+#my-password-form {
+    width: 25%;
+}
+
 #submit-email {
+    height: 45px;
+    width: 80px;
+    font-family: "VALORANT", sans-serif;
+    background-color: #53212B;
+    color: white;
+}
+
+.form-label {
+    font-family: "VALORANT", sans-serif;
+    color: white;
+}
+
+.form-text {
+    font-family: "Courier New", sans-serif;
+    color: white;
+}
+
+#submit-password {
     height: 45px;
     width: 80px;
     font-family: "VALORANT", sans-serif;
