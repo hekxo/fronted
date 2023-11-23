@@ -1,0 +1,156 @@
+body {
+    background-image: url("https://shorturl.at/jpsCG");
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: VALORANT, sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: VALORANT, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+#multi-step-form-container {
+    margin-top: 5rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.button {
+    font-family: VALORANT, sans-serif;
+    font-size: larger;
+    padding: 0.7rem 1.5rem;
+    background-color: #BD3944;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #BD3944;
+}
+
+.mt-3 {
+    font-family: "Courier New", sans-serif;
+    color: white;
+    margin-top: 2rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.form-step {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+}
+
+ul.form-stepper .form-stepper-circle {
+    position: relative;
+}
+
+ul.form-stepper .form-stepper-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.form-stepper-horizontal {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-stepper-horizontal li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.form-stepper-horizontal li:not(:last-child):after {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 1px;
+    content: "";
+    top: 32%;
+}
+
+.form-stepper-horizontal li:after {
+    background-color: white;
+}
+
+.form-stepper-horizontal li.form-stepper-completed:after {
+    background-color: #BD3944;
+}
+
+.form-stepper-horizontal li:last-child {
+    flex: unset;
+}
+
+ul.form-stepper li a .form-stepper-circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    line-height: 1.7rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 50%;
+}
+
+.form-stepper .form-stepper-active .form-stepper-circle {
+    background-color: #BD3944 !important;
+    font-family: VALORANT, sans-serif;
+    font-size: larger;
+    color: white;
+}
+
+.form-stepper .form-stepper-active .label {
+    color: white !important;
+    font-family: VALORANT, sans-serif;
+}
+
+.form-stepper .form-stepper-active .form-stepper-circle:hover {
+    background-color: #BD3944 !important;
+    color: white !important;
+}
+
+.form-stepper .form-stepper-unfinished .form-stepper-circle {
+    font-family: VALORANT, sans-serif;
+    font-size: larger;
+    color: white;
+    background-color: #53212B;
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle {
+    font-family: VALORANT, sans-serif;
+    background-color: #53212B !important;
+    color: white;
+}
+
+.form-stepper .label {
+    font-family: VALORANT, sans-serif;
+    color: white;
+}

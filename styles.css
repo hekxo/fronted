@@ -4,6 +4,19 @@ body {
     margin: 0;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+}
+
+#scrollTopImage {
+    height: 32px;
+    width: 32px;
+}
+
 .custom-navbar {
     background-color: #53212B;
     border-right: 5px solid #BD3944;
@@ -56,7 +69,7 @@ body {
 }
 
 #myForm {
-    width: 25%;
+    width: 50%;
 }
 
 #my-password-form {
@@ -346,6 +359,33 @@ h2 {
     font-family: "VALORANT", sans-serif;
 }
 
+.fullscreen-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#fullscreen-video1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+#fullscreen-video2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+#fullscreen-video3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
 .play-icon {
     height: 2em;
     width: 2em;
@@ -419,6 +459,33 @@ h2 {
     height: 3.5em;
     width: 8.5em;
     font-family: "VALORANT", sans-serif;
+}
+
+#quiz-container {
+    text-align: center;
+}
+
+.p-question {
+    font-family: VALORANT, sans-serif;
+    color: white;
+}
+
+.answer {
+    font-family: "Courier New", sans-serif;
+    color: white;
+    text-align: left;
+    display: inline-block;
+}
+
+#submit-quiz-btn {
+    background-color: #BD3944;
+    font-family: VALORANT, sans-serif;
+    color: white;
+}
+
+#result {
+    font-family: VALORANT, sans-serif;
+    color: white;
 }
 
 .p-timer {
