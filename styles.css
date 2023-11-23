@@ -26,7 +26,7 @@ body {
     padding: 0;
 }
 
-.   navbar-toggler {
+.navbar-toggler {
     color: #BD3944;
 }
 
@@ -43,6 +43,16 @@ body {
     background-color: #53212B;
     height: auto;
     padding: 0;
+}
+
+.nav-item-custom {
+    position: absolute;
+    right: 0;
+}
+
+#register-icon {
+    width: 32px;
+    height: 32px;
 }
 
 .nav-link {
@@ -369,7 +379,6 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
 }
 
 #fullscreen-video2 {
